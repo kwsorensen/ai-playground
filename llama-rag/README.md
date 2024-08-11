@@ -8,7 +8,7 @@ Following https://medium.com/@imabhi1216/implementing-rag-using-langchain-and-ol
 
 1. Create a dedicated python environment (optional/recommended: if you want to keep packages separate)
 2. ./install-requirements.sh
-3. python test.py
+3. `python test.py`
 
 NOTE: This was tested in a wsl2 ubuntu 22.04 environment with an NVIDIA GPU
 
@@ -81,8 +81,15 @@ A plant responds to disease in three main ways:
 
 ![Architecture Diagram](architecture-diagram.excalidraw.png)
 
+
+## ChatBot
+
+```
+python chatbot_example.py
+```
+
+This will standup an LLM with RAG embeddings on a local host (sharing disabled). You can then access it in your browser to add queries.
 ## FUN NEXT STEPS
 
 - Do this in an automated way for multiple PDFs
 - Save vectordb for reuse
-- Make this runnable as a server
