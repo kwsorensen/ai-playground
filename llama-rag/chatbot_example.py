@@ -76,6 +76,7 @@ gr.ChatInterface(
     title="Plant's Chatbot",
     examples=["What are different kinds of plant diseases", "What is Stewart’s wilt disease"],
     cache_examples=True,
-    retry_btn=None,
+    retry_btn=None, 
+    analytics_enabled = False
 
-).launch(share = False) # share = False critical to share information
+).launch(share = False) # share/analytics set to False - https://github.com/gradio-app/gradio/issues/35#issuecomment-707821763
